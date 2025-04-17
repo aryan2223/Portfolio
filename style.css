@@ -1,4 +1,11 @@
-
+* {
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    width: 100%;
+    overflow-x: hidden;
+  }
 
 
 
@@ -77,12 +84,15 @@ body {
 }
 .card-container {
     max-width: 1000px;
+    width: 100%;
     margin: auto;
     background-color: #ffffff;
-    padding: 40px;
+    padding: 20px; /* reduced to prevent overflow on small screens */
     border-radius: 16px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-}
+    box-sizing: border-box;
+    overflow-x: hidden;
+  }
 
 @keyframes fadeIn {
     from{
@@ -185,18 +195,16 @@ form, input,
     box-sizing: border-box;
 }
 
-.ContactMe{
-
+.ContactMe {
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
-/* 
-    padding: 20px 30px;
-
-
-    width: 550px; */
-
-}
+    overflow-x: hidden;
+  }
+  
+  .ContactMe form {
+    width: 100%;
+  }
 
 .Name{
 
@@ -206,14 +214,15 @@ form, input,
 }
 .Name > div {
     flex: 1 1 48%;
+    min-width: 0
 }
 .input-group{
 display: flex;
 flex-direction: column;
-
+flex-wrap: wrap;
 margin-bottom: 20px;
 flex:1;
-min-width: 200px;
+min-width: 00px;
 }
 .input-group label {
     margin-bottom: 5px;
