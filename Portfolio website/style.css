@@ -1,0 +1,251 @@
+
+
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+
+    .Name {
+        flex-direction: column;
+    }
+
+    .image,
+    main .Discpition {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    .image {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+   
+
+    .card-container {
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    .Hero h1 {
+        font-size: 20px;
+    }
+    footer{
+        display: flex;
+        flex-direction: column; /* Stack footer content vertically */
+        align-items: center;
+    }
+    
+    .Topic{
+        padding-left:0 ; /* Remove left padding */
+        display: flex;
+         /* Stack Topic items vertically */
+        gap: 0px; 
+        width: 100%; /* Full width */
+        text-align: center; /* Center text */
+        margin-top: 20px; 
+        justify-content: center;
+    align-items: center;
+    position: relative;
+
+    right: 40px;
+    }
+
+}
+body {
+    background-color: #f0f2f5; /* soft light gray */
+    margin: 0;
+    padding: 40px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.card-container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;transform: translateY(20px);
+    }to{
+
+        opacity: 1; transform: translateY(0); 
+
+    }
+    
+}
+
+section, form {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+Header{
+padding: 0 2px;
+margin: 30px;
+
+font-size: medium;
+
+}
+
+.Hero{
+
+    background-color: #f7f7f7;
+    color: #1a1a1a;
+    padding: 40px;
+    border-radius: 12px;
+    padding: 2px 0;
+    /* padding-top: 25px; */
+    width: 30%;
+    margin:0 30px;
+font-size: 25px;
+font-weight: 40px;
+}
+
+.TagLine{
+padding: 0;
+    margin: 31px;
+font-size: 20px;
+position: relative;
+bottom: 20px;
+}
+
+/* Container holding main content and image side by side */
+.main-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px; /* space between content and image */
+    padding: 0 30px;
+}
+
+/* Adjust main size */
+main {
+    flex: 1; /* Take available space */
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/* Fix typo and make it look nice */
+.Description {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Image section */
+.image {
+    width: 40%;
+    max-width: 400px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+form, input,
+ button {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+.ContactMe{
+
+    padding: 30px;
+    width: 60%;
+    box-sizing: border-box;
+/* 
+    padding: 20px 30px;
+
+
+    width: 550px; */
+
+}
+
+.Name{
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.Name > div {
+    flex: 1 1 48%;
+}
+.input-group{
+display: flex;
+flex-direction: column;
+
+margin-bottom: 20px;
+flex:1;
+min-width: 200px;
+}
+.input-group label {
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+.input-group input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button{
+
+    background-color: black;
+    color: white;
+    width: 100%;
+
+    height: 30px;
+
+    display: flex;
+    align-self: center;
+    justify-self: center;
+justify-content: center;
+align-items: center;
+}
+
+footer{
+margin: 30px;
+    display: flex;
+    
+}
+footer ul{
+
+list-style: none;
+}
+.Topic{
+    padding-left: 40%;
+    
+    display: flex;
+    gap: 8%;
+}
