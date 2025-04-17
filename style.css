@@ -1,5 +1,7 @@
 
 
+
+
 @media (max-width: 768px) {
     main {
         flex-direction: column;
@@ -7,6 +9,10 @@
 
     .Name {
         flex-direction: column;
+    
+    
+    
+    
     }
 
     .image,
@@ -59,7 +65,7 @@
     align-items: center;
     position: relative;
 
-    right: 40px;
+    right:80px;
     }
 
 }
@@ -178,10 +184,11 @@ form, input,
     margin-bottom: 16px;
     box-sizing: border-box;
 }
+
 .ContactMe{
 
-    padding: 30px;
-    width: 60%;
+    padding: 20px;
+    width: 100%;
     box-sizing: border-box;
 /* 
     padding: 20px 30px;
