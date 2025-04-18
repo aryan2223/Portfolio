@@ -44,7 +44,17 @@
    
 
     .card-container {
-        padding: 20px;
+        /* padding: 20px; */
+
+        /* max-width: 1000px; */
+        width: 100%;
+        margin: auto;
+        background-color: #ffffff;
+        padding: 0px; /* reduced to prevent overflow on small screens */
+        border-radius: 16px;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        box-sizing: border-box;
+        overflow-x: hidden;
     }
 
     header h1 {
@@ -61,18 +71,20 @@
     }
     
     .Topic{
-        padding-left:0 ; /* Remove left padding */
+          /* Remove left padding */
         display: flex;
          /* Stack Topic items vertically */
-        gap: 0px; 
+         flex-direction: row;
+         gap: 10px; 
         width: 100%; /* Full width */
         text-align: center; /* Center text */
         margin-top: 20px; 
         justify-content: center;
     align-items: center;
-    position: relative;
+    
+    /* position: relative;
 
-    right:80px;
+    right:70px; */
     }
 
 }
@@ -258,10 +270,19 @@ margin: 30px;
 footer ul{
 
 list-style: none;
+display: flex;
+    
+/* list-style: none; */
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+/* justify-content: space-between; */
+gap: 10px;
 }
 .Topic{
-    padding-left: 40%;
-    
-    display: flex;
-    gap: 8%;
+ /* padding-left: 40%;  */
+ display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: auto;
 }
